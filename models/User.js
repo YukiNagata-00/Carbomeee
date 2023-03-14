@@ -45,7 +45,13 @@ const UserSchema = new mongoose.Schema({
     learningCount: {
         type: Number,
         default: 0
-    }
+    },
+    passwordResetToken: { 
+        type: String 
+    },
+    passwordResetExpires: { 
+        type: Date 
+    },
 },
     {timestamps: true}
 );
